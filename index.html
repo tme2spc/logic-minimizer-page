@@ -125,6 +125,21 @@
   .overflow-x {
     overflow-x: auto;
   }
+  .shots {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .shots img {
+    height: 380px;
+    max-height: 60vh;
+    width: auto;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    flex: 0 0 auto;
+  }
 </style>
 </head>
 <body>
@@ -178,6 +193,16 @@
           <h3>파이프라인</h3>
           <p>파이프라인 구조 설계 지원</p>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>스크린샷</h2>
+      <div class="shots overflow-x">
+        <img src="screenshots/1-minimize.jpg" alt="논리식 최소화 알고리즘 선택 화면" loading="lazy">
+        <img src="screenshots/2-verilog.jpg" alt="Verilog 코드 및 Testbench 생성 화면" loading="lazy">
+        <img src="screenshots/3-timing.jpg" alt="타이밍 다이어그램(파형도) 화면" loading="lazy">
+        <img src="screenshots/4-dff.jpg" alt="D Flip-Flop 파이프라인 설정 화면" loading="lazy">
       </div>
     </section>
 
